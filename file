@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    stages{
+        stage('one'){
+            steps{
+                echo "$BUILD_NUMBER"
+            }
+        }
+            stage('two'){
+            steps{
+                echo "$BUILD_NAME"
+            }
+            
+        }
+    }
+}
